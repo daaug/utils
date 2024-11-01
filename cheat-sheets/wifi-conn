@@ -1,0 +1,24 @@
+## GUI
+nm-connection-editor
+
+## Terminal - nmcli
+# Enable interface
+ip link wlo1 up
+
+# Check wifi status
+nmcli radio wifi enabled
+
+# Turn it on
+nmcli radio wifi on
+
+# Scan available wifi networks
+nmcli dev wifi list
+
+# Connect to wifi
+sudo nmcli --ask dev wifi connect "SSID"
+
+# Show previously saved networks
+nmcli con show
+
+# Disconnect 
+nmcli con down "SSID or UUID"
